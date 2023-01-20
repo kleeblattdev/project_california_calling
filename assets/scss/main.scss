@@ -78,6 +78,11 @@ h4{
     }
 }
 
+.mediaLogo{
+    width: 40px;
+    height: 40px;
+}
+
 /* ================= Header Styles ================= */
 header{
     padding: 0 6vw;
@@ -230,7 +235,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40vh 10vw 70vh;
+    padding: 40vh 10vw 75vh;
+    margin-bottom: 5vh;
     position: relative;
     .rotate{
         position: absolute;
@@ -251,5 +257,54 @@ header{
     #poppyBearText{
         margin-left: 20vw;
     }
+    #poppyBearImgOne{
+        position: absolute;
+        background-image: url(../img/rosebear.png);
+        background-size: cover;
+        height: 70vh;
+        width: 40vw;
+        bottom: 0;
+        right: 20%;
+    }
+    #poppyBearImgTwo{
+        position: absolute;
+        background-image: url(../img/pb3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 30vw;
+        bottom:7%;
+        left: 20%;
+    }
+
 }
 /* ================= Footer Styles ================= */
+
+footer{
+    @include colorWhiteBgBlack;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "footertext banner"
+    "links links";
+    #footerText{
+        grid-area: footertext;
+        margin: 20vh 8vw 10vh;
+    }
+    #socialMedia{
+        grid-area: links;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 8vw;
+    }
+    #date{
+        @include colorBlackBgWhite;
+        
+        .dateYear{
+            transform: rotate(45deg);
+            color: $colorWhite;
+            -webkit-text-stroke: 1.5px $colorBlack;
+        }
+    }
+}

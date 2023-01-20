@@ -64,6 +64,11 @@ h4 {
   cursor: pointer;
 }
 
+.mediaLogo {
+  width: 40px;
+  height: 40px;
+}
+
 /* ================= Header Styles ================= */
 header {
   padding: 0 6vw;
@@ -220,7 +225,8 @@ header #headerLogo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40vh 10vw 70vh;
+  padding: 40vh 10vw 75vh;
+  margin-bottom: 5vh;
   position: relative;
 }
 #poppyBear .rotate {
@@ -242,7 +248,53 @@ header #headerLogo {
 #poppyBear #poppyBearText {
   margin-left: 20vw;
 }
+#poppyBear #poppyBearImgOne {
+  position: absolute;
+  background-image: url(../img/rosebear.png);
+  background-size: cover;
+  height: 70vh;
+  width: 40vw;
+  bottom: 0;
+  right: 20%;
+}
+#poppyBear #poppyBearImgTwo {
+  position: absolute;
+  background-image: url(../img/pb3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 30vw;
+  bottom: 7%;
+  left: 20%;
+}
 
 /* ================= Footer Styles ================= */
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "footertext banner" "links links";
+}
+footer #footerText {
+  grid-area: footertext;
+  margin: 20vh 8vw 10vh;
+}
+footer #socialMedia {
+  grid-area: links;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8vw;
+}
+footer #date {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+footer #date .dateYear {
+  transform: rotate(45deg);
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.5px #000000;
+}
 
 /*# sourceMappingURL=style.css.map */
