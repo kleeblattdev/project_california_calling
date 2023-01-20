@@ -7,3 +7,53 @@ $colorBlack: #000000;
 /* font-family
 font-family: 'Lora', serif;
 font-family: 'Work Sans', sans-serif; */
+
+@import 'fonts.scss';
+
+/* ================= Global Styles ================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1,h2,h4,.factNum,#date{
+    font-family: 'Lora', serif;
+    font-variation-settings: 'wght' 600;
+}
+
+p,.btnRSVP{
+    font-family: 'Work Sans', sans-serif;
+    font-variation-settings: 'wght' 600;
+    font-size: 1rem;
+}
+
+h1,h2,#date{
+    font-size: 5.5rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+.factNum{
+    font-size: 4rem;
+}
+
+.btnRSVP{
+    font-size: 1.3rem;
+}
+
+/* ================= Header Styles ================= */
+/* ================= Main Styles ================= */
+/* ================= Main facts Styles ================= */
+/* ================= Main action Styles ================= */
+/* ================= Main golden bear Styles ================= */
+/* ================= Main poppy bear Styles ================= */
+/* ================= Footer Styles ================= */
