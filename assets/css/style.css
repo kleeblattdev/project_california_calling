@@ -21,6 +21,7 @@ font-family: 'Work Sans', sans-serif; */
 body {
   max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 h1, h2, h4, .factNum, #date {
@@ -41,6 +42,8 @@ h1, h2, #date {
 
 h4 {
   font-size: 2rem;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
 }
 
 .factNum {
@@ -164,8 +167,9 @@ header #headerLogo {
 }
 #action #imgSeven {
   background-image: url(../img/action7.jpeg);
-  bottom: -10%;
+  bottom: -5%;
   right: 25%;
+  z-index: 1;
 }
 #action #actionTextTop, #action #actionTextBottom {
   padding: 0 30vw;
@@ -179,7 +183,66 @@ header #headerLogo {
 }
 
 /* ================= Main golden bear Styles ================= */
+#goldenBear {
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20vh 10vw 70vh;
+  position: relative;
+}
+#goldenBear #goldenBearText {
+  margin-left: 20vw;
+}
+#goldenBear #gBearImg {
+  position: absolute;
+  height: 650px;
+  width: 650px;
+  background-image: url(../img/goldenbear.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -5%;
+}
+#goldenBear #gBearImgTwo {
+  position: absolute;
+  background-image: url(../img/gb2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 463px;
+  width: 358px;
+  bottom: -2%;
+  right: 22%;
+}
+
 /* ================= Main poppy bear Styles ================= */
+#poppyBear {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40vh 10vw 70vh;
+  position: relative;
+}
+#poppyBear .rotate {
+  position: absolute;
+  right: -15%;
+  top: -20%;
+  max-width: 40%;
+  height: auto;
+  animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#poppyBear #poppyBearText {
+  margin-left: 20vw;
+}
+
 /* ================= Footer Styles ================= */
 
 /*# sourceMappingURL=style.css.map */
