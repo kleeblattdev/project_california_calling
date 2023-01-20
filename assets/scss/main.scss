@@ -81,6 +81,7 @@ h4{
 .mediaLogo{
     width: 40px;
     height: 40px;
+    margin: 5px;
 }
 
 /* ================= Header Styles ================= */
@@ -282,15 +283,44 @@ header{
 
 footer{
     @include colorWhiteBgBlack;
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2,0.5fr);
     grid-template-areas: 
     "footertext banner"
     "links links";
+
     #footerText{
         grid-area: footertext;
         margin: 20vh 8vw 10vh;
+    }
+
+    #banner{
+        grid-area: banner;
+        position: relative;
+        #date{
+            @include colorBlackBgWhite;
+            position: absolute;
+            padding: 20px;
+            top: 25%;
+            right: -56%;
+            rotate: 40deg;
+            animation: marquee 5s infinite linear;
+            .dateYear{
+                color: $colorWhite;
+                -webkit-text-stroke: 1.5px $colorBlack;
+            }
+
+            @keyframes marquee {
+                from{
+                    transform: translateX(-22%);
+                }
+                to{
+                    transform: translateX(0%);
+                }
+            }
+        }
     }
     #socialMedia{
         grid-area: links;
@@ -298,13 +328,9 @@ footer{
         justify-content: space-between;
         margin: 0 8vw;
     }
-    #date{
+    #sfDesign{
         @include colorBlackBgWhite;
-        
-        .dateYear{
-            transform: rotate(45deg);
-            color: $colorWhite;
-            -webkit-text-stroke: 1.5px $colorBlack;
-        }
+        line-height: 0.7em;
+        display: inline;
     }
 }
