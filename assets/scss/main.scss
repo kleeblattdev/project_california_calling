@@ -48,11 +48,61 @@ h4{
 
 .btnRSVP{
     font-size: 1.3rem;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    padding: 15px 40px;
+    border: 1px solid $colorWhite;
+}
+
+@mixin colorWhiteBgBlack{
+    background-color: $colorBlack;
+    color: $colorWhite;
+}
+
+@mixin colorBlackBgWhite{
+    background-color: $colorWhite;
+    color: $colorBlack;
 }
 
 /* ================= Header Styles ================= */
+header{
+    padding: 0 6vw;
+    @include colorWhiteBgBlack;
+    #headerHeadline{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            background-color: rgba(255, 255, 255, 0.2);
+            height: 200px;
+            width: 2px;
+        }
+        p:first-of-type{
+            padding:10vh 0 2vh;
+        }
+        h1{
+            text-align: center;
+            line-height: 0.8em;
+            width: 30vw;
+            padding-bottom: 2vh;
+            #headlineStyle{
+                color: $colorBlack;
+                -webkit-text-stroke: 1px $colorWhite;
+            }
+        }
+    }
+    #headerLogo{
+        display:flex;
+        justify-content: space-between;
+    }
+}
 /* ================= Main Styles ================= */
+
 /* ================= Main facts Styles ================= */
+#facts{
+    @include colorWhiteBgBlack;
+}
 /* ================= Main action Styles ================= */
 /* ================= Main golden bear Styles ================= */
 /* ================= Main poppy bear Styles ================= */

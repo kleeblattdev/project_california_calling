@@ -48,11 +48,54 @@ h4 {
 
 .btnRSVP {
   font-size: 1.3rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 15px 40px;
+  border: 1px solid #FFFFFF;
 }
 
 /* ================= Header Styles ================= */
+header {
+  padding: 0 6vw;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+header #headerHeadline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #headerHeadline div {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 200px;
+  width: 2px;
+}
+header #headerHeadline p:first-of-type {
+  padding: 10vh 0 2vh;
+}
+header #headerHeadline h1 {
+  text-align: center;
+  line-height: 0.8em;
+  width: 30vw;
+  padding-bottom: 2vh;
+}
+header #headerHeadline h1 #headlineStyle {
+  color: #000000;
+  -webkit-text-stroke: 1px #FFFFFF;
+}
+header #headerLogo {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ================= Main Styles ================= */
 /* ================= Main facts Styles ================= */
+#facts {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 /* ================= Main action Styles ================= */
 /* ================= Main golden bear Styles ================= */
 /* ================= Main poppy bear Styles ================= */
