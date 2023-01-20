@@ -32,6 +32,7 @@ p, .btnRSVP {
   font-family: "Work Sans", sans-serif;
   font-variation-settings: "wght" 600;
   font-size: 1rem;
+  line-height: 2rem;
 }
 
 h1, h2, #date {
@@ -118,6 +119,65 @@ header #headerLogo {
 }
 
 /* ================= Main action Styles ================= */
+#action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#action div {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  background-size: cover;
+}
+#action #imgOne {
+  top: -5%;
+  right: 15%;
+  background-image: url(../img/action1.jpeg);
+}
+#action #imgTwo {
+  background-image: url(../img/action2.jpeg);
+  top: 20%;
+  left: 0;
+}
+#action #imgThree {
+  background-image: url(../img/action3.jpeg);
+  top: 40%;
+  right: -5%;
+}
+#action #imgFour {
+  background-image: url(../img/action4.jpeg);
+  top: 50%;
+  left: 20%;
+}
+#action #imgFive {
+  background-image: url(../img/action5.jpeg);
+  top: 60%;
+  right: 10%;
+}
+#action #imgSix {
+  background-image: url(../img/action6.jpeg);
+  left: -5%;
+  bottom: 15%;
+}
+#action #imgSeven {
+  background-image: url(../img/action7.jpeg);
+  bottom: -10%;
+  right: 25%;
+}
+#action #actionTextTop, #action #actionTextBottom {
+  padding: 0 30vw;
+}
+#action #actionTextTop {
+  margin-top: 45vh;
+}
+#action #actionTextBottom {
+  margin-top: 50vh;
+  margin-bottom: 20vh;
+}
+
 /* ================= Main golden bear Styles ================= */
 /* ================= Main poppy bear Styles ================= */
 /* ================= Footer Styles ================= */

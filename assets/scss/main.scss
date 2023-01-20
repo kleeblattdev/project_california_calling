@@ -20,6 +20,11 @@ font-family: 'Work Sans', sans-serif; */
     color: $colorBlack;
 }
 
+@mixin imgWidthHeight($maxWidth, $height){
+    max-width: $maxWidth;
+    height: $height;
+}
+
 /* ================= Global Styles ================= */
 
 *{
@@ -42,6 +47,7 @@ p,.btnRSVP{
     font-family: 'Work Sans', sans-serif;
     font-variation-settings: 'wght' 600;
     font-size: 1rem;
+    line-height: 2rem;
 }
 
 h1,h2,#date{
@@ -124,6 +130,65 @@ header{
     }
 }
 /* ================= Main action Styles ================= */
+#action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    div{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        background-size: cover;
+    }
+    #imgOne{
+        top:-5%;
+        right: 15%;
+        background-image: url(../img/action1.jpeg);
+    }
+    #imgTwo{
+        background-image: url(../img/action2.jpeg);
+        top: 20%;
+        left: 0;
+    }
+    #imgThree{
+        background-image: url(../img/action3.jpeg);
+        top: 40%;
+        right: -5%;
+    }
+    #imgFour{
+        background-image: url(../img/action4.jpeg);
+        top: 50%;
+        left: 20%;
+    }
+    #imgFive{
+        background-image: url(../img/action5.jpeg);
+        top: 60%;
+        right: 10%;
+    }
+    #imgSix{
+        background-image: url(../img/action6.jpeg);
+        left: -5%;
+        bottom: 15%;
+    }
+    #imgSeven{
+        background-image: url(../img/action7.jpeg);
+        bottom: -10%;
+        right: 25%;
+    }
+
+    #actionTextTop, #actionTextBottom{
+        padding:0 30vw;
+    }
+    #actionTextTop{
+        margin-top: 45vh;
+    }
+    #actionTextBottom{
+        margin-top: 50vh;
+        margin-bottom: 20vh;
+}
+}
 /* ================= Main golden bear Styles ================= */
 /* ================= Main poppy bear Styles ================= */
 /* ================= Footer Styles ================= */
