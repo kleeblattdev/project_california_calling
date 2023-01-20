@@ -53,6 +53,12 @@ h4 {
   padding: 15px 40px;
   border: 1px solid #FFFFFF;
 }
+.btnRSVP:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  transition-duration: 1s;
+  cursor: pointer;
+}
 
 /* ================= Header Styles ================= */
 header {
@@ -94,6 +100,21 @@ header #headerLogo {
 #facts {
   background-color: #000000;
   color: #FFFFFF;
+  padding: 10vh 6vw;
+  background-image: url(../img/map.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 10% right 10%;
+  background-size: 40%;
+}
+#facts h2 {
+  padding-right: 20vw;
+  margin-bottom: 10vh;
+}
+#facts article {
+  margin-bottom: 5vh;
+}
+#facts article p {
+  margin-bottom: 2vh;
 }
 
 /* ================= Main action Styles ================= */

@@ -10,6 +10,16 @@ font-family: 'Work Sans', sans-serif; */
 
 @import 'fonts.scss';
 
+@mixin colorWhiteBgBlack{
+    background-color: $colorBlack;
+    color: $colorWhite;
+}
+
+@mixin colorBlackBgWhite{
+    background-color: $colorWhite;
+    color: $colorBlack;
+}
+
 /* ================= Global Styles ================= */
 
 *{
@@ -52,16 +62,11 @@ h4{
     color: $colorWhite;
     padding: 15px 40px;
     border: 1px solid $colorWhite;
-}
-
-@mixin colorWhiteBgBlack{
-    background-color: $colorBlack;
-    color: $colorWhite;
-}
-
-@mixin colorBlackBgWhite{
-    background-color: $colorWhite;
-    color: $colorBlack;
+    &:hover{
+        @include colorBlackBgWhite;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
 }
 
 /* ================= Header Styles ================= */
@@ -102,6 +107,21 @@ header{
 /* ================= Main facts Styles ================= */
 #facts{
     @include colorWhiteBgBlack;
+    padding: 10vh 6vw;
+    background-image: url(../img/map.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 10%;
+    background-size: 40%;
+    h2{
+        padding-right: 20vw;
+        margin-bottom: 10vh;
+    }
+    article {
+        margin-bottom: 5vh;
+        p{
+            margin-bottom: 2vh;
+        }
+    }
 }
 /* ================= Main action Styles ================= */
 /* ================= Main golden bear Styles ================= */
